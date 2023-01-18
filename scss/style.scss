@@ -1,0 +1,128 @@
+@import "nullstyle";
+
+body {
+   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.header {
+   margin-bottom: 20px;
+   height: 60px;
+   background: #25262b;
+
+   &__container {
+      max-width: 1000px;
+      margin: 0 auto;
+      height: 100%;
+   }
+   &__block {
+      width: 45%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   &__logo {
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 700;
+   }
+
+   &__menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      &--rev {
+         flex-direction: row-reverse;
+      }
+   }
+
+   &__list {
+      width: 300px;
+
+      display: flex;
+      justify-content: space-between;
+      text-transform: uppercase;
+   }
+   &__link {
+      display: flex;
+      color: #fff;
+      &:hover {
+         color: rgb(242, 242, 242);
+      }
+   }
+   &__btn {
+      & button {
+         font-size: 14px;
+         color: #fff;
+         padding: 10px 20px;
+         background-color: #16829e;
+         border-radius: 20px;
+         &:hover {
+            background-color: #157891;
+         }
+      }
+   }
+}
+
+
+.flex {
+   &__container {
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+      justify-content: space-between;
+      max-width: 1000px;
+      margin: 0 auto;
+      height: 450px;
+   }
+
+   &__colrow--bg {
+      // height: 150px;
+      padding: 30px;
+      font-size: 25px;
+      background-color: rgb(220, 208, 47);
+   }
+
+   &__clumn--1 {
+      display: flex;
+      flex: 1 0 33%;
+   }
+
+   &__clumn--2 {
+      display: flex;
+      flex: 1 0 66%;
+      gap: 20px;
+   }
+
+   &__row--1 {
+      display: flex;
+      flex: 0 1 200px;
+   }
+
+   &__row--2 {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      flex: 1 0 auto;
+   }
+
+   &__column--3 {
+      display: flex;
+      flex: 1 0 45%;
+      gap: 20px;
+   }
+
+   &__row--3 {
+      display: flex;
+      flex: 1 0 70%;
+   }
+
+   &__row--4 {
+      display: flex;
+      flex: 0 1 18%;
+   }
+
+   &__column--4 {
+      display: flex;
+      flex: 1 0 45%;
+   }
+}
